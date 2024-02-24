@@ -163,6 +163,7 @@ alias cerebro="cd ~/Library/CloudStorage/OneDrive-talent.com/cereberum/cereberum
 # alias cd
 alias st="cd ~/Library/CloudStorage/OneDrive-talent.com/projects/study"
 alias tm="cd ~/Library/CloudStorage/OneDrive-talent.com/projects/talent-ml"
+alias dotfiles="cd ~/dotfiles/"
 
 # ls
 alias ls="ls --color=auto"
