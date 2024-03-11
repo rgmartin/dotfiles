@@ -99,6 +99,13 @@ source $ZSH/oh-my-zsh.sh
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 
+
+
+
+export PATH="$PATH:/opt/homebrew/bin:/opt/homebrew/sbin"
+export PATH="$PATH:/usr/local/go/bin"
+
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -159,6 +166,10 @@ bindkey -v
 #
 alias v=nvim
 alias cerebro="cd ~/Library/CloudStorage/OneDrive-talent.com/cereberum/cereberum"
+alias books="cd /Users/rubertmartinpardo/Library/CloudStorage/OneDrive-talent.com/books"
+
+# alias rm
+alias rm="rm -iv"
 
 # alias cd
 alias st="cd ~/Library/CloudStorage/OneDrive-talent.com/projects/study"
@@ -176,3 +187,10 @@ alias last='find . -type f -not -path "*/\.*" -exec ls -lrt {} +'
 alias t='tmux'
 alias e='exit'
 
+#----------------------------------------Functions--------------------------------
+
+# git add all, commit with message and push
+
+gacp () {
+  git commit . ; git commit -m "[RUN PIPELINE] $1"; git push
+}
