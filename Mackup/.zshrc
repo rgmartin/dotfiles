@@ -165,15 +165,17 @@ bindkey -v
 # from https://www.youtube.com/watch?v=iagjeLuxnMs
 #
 alias v=nvim
-alias cerebro="cd ~/Library/CloudStorage/OneDrive-talent.com/cereberum/cereberum"
-alias books="cd /Users/rubertmartinpardo/Library/CloudStorage/OneDrive-talent.com/books"
+alias nvim-ks='NVIM_APPNAME="nvim-ks" nvim'
 
 # alias rm
 alias rm="rm -iv"
 
 # alias cd
-alias st="cd ~/Library/CloudStorage/OneDrive-talent.com/projects/study"
-alias tm="cd ~/Library/CloudStorage/OneDrive-talent.com/projects/talent-ml"
+alias cerebro="cd ~/Library/CloudStorage/OneDrive-talent.com/cereberum/cereberum"
+alias books="cd /Users/rubertmartinpardo/Library/CloudStorage/OneDrive-talent.com/books"
+alias study="cd ~/Library/CloudStorage/OneDrive-talent.com/projects/study"
+alias talent-ml="cd ~/Library/CloudStorage/OneDrive-talent.com/projects/talent-ml"
+alias talent="cd ~/Library/CloudStorage/OneDrive-talent.com/projects/talent"
 alias dotfiles="cd ~/dotfiles/"
 
 # ls
@@ -192,5 +194,5 @@ alias e='exit'
 # git add all, commit with message and push
 
 gacp () {
-  git commit . ; git commit -m "[RUN PIPELINE] $1"; git push
+  git add  -A; git commit -m "[RUN PIPELINE] $1"; git push
 }
