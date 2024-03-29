@@ -166,6 +166,7 @@ bindkey -v
 #
 alias v=nvim
 alias nvim-ks='NVIM_APPNAME="nvim-ks" nvim'
+alias nvim-tc='NVIM_APPNAME="nvim-tc" nvim'
 
 # alias rm
 alias rm="rm -iv"
