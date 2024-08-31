@@ -91,7 +91,7 @@ plugins=(
   zsh-autosuggestions
   z
   macos
-  vi-mode
+  zsh-vi-mode
   )
 
 
@@ -156,7 +156,6 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,bold,underline"
 
-source /Users/rubertmartinpardo/.config/broot/launcher/bash/br
 
 #Enable vi mode
 bindkey -v
