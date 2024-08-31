@@ -1,45 +1,52 @@
-hs.loadSpoon('ControlEscape'):start() -- Load Hammerspoon bits from https://github.com/jasonrudolph/ControlEscape.spoon
+hyper = { "ctrl", "alt", "cmd", "shift" }
 
---------------------------------
--- START VIM CONFIG
---------------------------------
-local VimMode = hs.loadSpoon("VimMode")
-local vim = VimMode:new()
+-- Generic Helpers
 
--- Configure apps you do *not* want Vim mode enabled in
--- For example, you don't want this plugin overriding your control of Terminal
--- vim
-vim
-  :disableForApp('Code')
-  :disableForApp('zoom.us')
-  :disableForApp('iTerm')
-  :disableForApp('iTerm2')
-   :disableForApp('Alacritty')
-  :disableForApp('Terminal')
+function printt(table)
+	for k, v in pairs(table) do
+		print(k .. "--\t" .. tostring(v))
+	end
+end
 
--- If you want the screen to dim (a la Flux) when you enter normal mode
--- flip this to true.
-vim:shouldDimScreenInNormalMode(false)
+hs.urlevent.bind("alert", function(eventName, params)
+	hs.alert.show(params["msg"])
+end)
 
--- If you want to show an on-screen alert when you enter normal mode, set
--- this to true
-vim:shouldShowAlertInNormalMode(true)
+hs.urlevent.bind("screencapture", function(eventName, params)
+	os.execute("screencapture -R-1440,-175,5280,2600 " .. params["path"])
+end)
 
--- You can configure your on-screen alert font
-vim:setAlertFont("Courier New")
+function clickMenuItem(app, item)
+	app = hs.application.find(app)
+	app:selectMenuItem(item)
+end
 
--- Enter normal mode by typing a key sequence
-vim:enterWithSequence('jk')
+function file_exists(name)
+	local f = io.open(name, "r")
+	if f ~= nil then
+		io.close(f)
+		return true
+	else
+		return false
+	end
+end
 
--- if you want to bind a single key to entering vim, remove the
--- :enterWithSequence('jk') line above and uncomment the bindHotKeys line
--- below:
---
--- To customize the hot key you want, see the mods and key parameters at:
---   https://www.hammerspoon.org/docs/hs.hotkey.html#bind
---
--- vim:bindHotKeys({ enter = { {'ctrl'}, ';' } })
+function require_if_exists(file)
+	if file_exists(file .. ".lua") then
+		print(" #### Loading " .. file)
+		require(file)
+	end
+end
 
---------------------------------
--- END VIM CONFIG
---------------------------------
+require_if_exists("autoreload")
+-- hs.loadSpoon("ReloadConfiguration")
+-- spoon.ReloadConfiguration:start()
+
+require_if_exists("keyboard")
+--require_if_exists("yabai")
+--require_if_exists("auto-audio")
+--require_if_exists("zoom-mute")
+--require_if_exists("multidisplay-black")
+require_if_exists("pomo")
+require_if_exists("distractions")
+require_if_exists("hs-fuzzy-window-picker")
