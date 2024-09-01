@@ -89,9 +89,11 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(
   git
   zsh-autosuggestions
+  zsh-syntax-highlighting
   z
   macos
   zsh-vi-mode
+  web-search 
   )
 
 
@@ -171,17 +173,16 @@ alias nvim-tc='NVIM_APPNAME="nvim-tc" nvim'
 alias rm="rm -iv"
 
 # alias cd
-alias cerebro="cd ~/Library/CloudStorage/OneDrive-talent.com/cereberum/cereberum"
-alias books="cd /Users/rubertmartinpardo/Library/CloudStorage/OneDrive-talent.com/books"
-alias study="cd ~/Library/CloudStorage/OneDrive-talent.com/projects/study"
-alias talent-ml="cd ~/Library/CloudStorage/OneDrive-talent.com/projects/talent-ml"
-alias talent="cd ~/Library/CloudStorage/OneDrive-talent.com/projects/talent"
+alias cd="z"
+eval "$(zoxide init zsh)"
+
+alias cerebro="cd ~/cereberum/cereberum"
 alias dotfiles="cd ~/dotfiles/"
 
 # ls
-alias ls="ls --color=auto"
-alias ll="ls -la"
-alias la="ls -lathr"
+alias ls="eza --color=always --long --no-filesize --icons=always --no-time"
+alias ll="eza -la"
+alias la="ll -lathr"
 
 # find all files recursively and sorts by last modification, ignore hidden files
 alias last='find . -type f -not -path "*/\.*" -exec ls -lrt {} +'
@@ -196,3 +197,4 @@ alias e='exit'
 gacp () {
   git add  -A; git commit -m "[RUN PIPELINE] $1"; git push
 }
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
