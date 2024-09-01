@@ -5,6 +5,7 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "Change caps_lock to command+control+option+shift. Escape if alone",
@@ -26,6 +27,7 @@
                     },
                     {
                         "description": "Hyper+HJKL to arrows",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -75,6 +77,7 @@
                     },
                     {
                         "description": "Hyper+Backspace to Del",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -91,6 +94,7 @@
                     },
                     {
                         "description": "Hyper+0-= to media",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -120,6 +124,7 @@
                     },
                     {
                         "description": "Hyper+,./ to volume",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -149,6 +154,7 @@
                     },
                     {
                         "description": "Hyper+YUIO to Nav",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {

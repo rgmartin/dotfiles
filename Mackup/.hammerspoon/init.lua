@@ -50,3 +50,5 @@ require_if_exists("keyboard")
 require_if_exists("pomo")
 require_if_exists("distractions")
 require_if_exists("hs-fuzzy-window-picker")
+require_if_exists("ctrl-hjkl")
+hs.loadSpoon("ControlEscape"):start() -- Load Hammerspoon bits from https://github.com/jasonrudolph/ControlEscape.spoon
