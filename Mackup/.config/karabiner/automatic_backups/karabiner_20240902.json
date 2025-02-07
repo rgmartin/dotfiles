@@ -25,30 +25,6 @@
                         ]
                     },
                     {
-                        "description": "Hyper+t to control+t",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "t",
-                                    "modifiers": {
-                                        "mandatory": ["right_shift", "right_alt", "right_command", "right_control"],
-                                        "optional": "any"
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "t",
-                                        "modifiers": {
-                                            "mandatory": ["right_control"],
-                                            "optional": "any"
-                                        },
-                                        "type": "basic"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
                         "description": "Hyper+HJKL to arrows",
                         "manipulators": [
                             {
@@ -308,8 +284,7 @@
             ],
             "virtual_hid_keyboard": {
                 "caps_lock_delay_milliseconds": 0,
-                "keyboard_type": "ansi",
-                "keyboard_type_v2": "ansi"
+                "keyboard_type": "ansi"
             }
         }
     ]

@@ -21,3 +21,6 @@ export PATH
 # The original version is saved in .zprofile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.8/bin:${PATH}"
 export PATH
+
+# Created by `pipx` on 2024-09-02 00:15:33
+export PATH="$PATH:/Users/rubert/.local/bin"

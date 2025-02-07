@@ -1,5 +1,5 @@
 import = [
-  "~/.config/alacritty/themes/themes/catppuccin.toml"
+  "~/.config/alacritty/themes/themes/tokyo-night.toml"
 ]
 
 live_config_reload = true
@@ -574,8 +574,6 @@ semantic_escape_chars = ",│`|:\"' ()[]{}<>"
 
 [window]
 decorations = "Buttonless"
-blur = true
-opacity = 0.8
 
 [window.dimensions]
 columns = 80
