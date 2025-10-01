@@ -56,7 +56,6 @@ set autoindent
 "---------------------
 set shortmess+=I " disable startup message
 set nu " number lines
-set rnu " relative line numbering
 set incsearch " incremental search (as string is being typed)
 set hls " highlight search
 set listchars=tab:>>,nbsp:~ " set list to see tabs and non-breakable spaces
@@ -261,7 +260,7 @@ set number
 " This is useful because you can tell, at a glance, what count is needed to
 " jump up or down to a particular line, by {count}k to go up or {count}j to go
 " down.
-set relativenumber
+" set relativenumber
 
 " Always show the status line at the bottom, even if you only have one window open.
 set laststatus=2

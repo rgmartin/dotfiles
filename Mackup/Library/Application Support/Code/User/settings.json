@@ -1,0 +1,86 @@
+{
+    "yaml.schemas": {
+        "file:///Users/rubert/.vscode/extensions/atlassian.atlascode-3.8.18/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "atlascode.jira.enabled": true,
+    "atlascode.jira.jqlList": [
+        {
+            "id": "e7166653-c4a3-4040-bfd3-89588d2e7b80",
+            "enabled": true,
+            "name": "My ayasdi Issues",
+            "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+            "siteId": "1d335e53-4745-44ff-ac85-bf151d3bd741",
+            "monitor": true
+        }
+    ],
+    "atlascode.bitbucket.enabled": true,
+    "editor.fontSize": 18,
+    "editor.fontVariations": false,
+    "editor.fontFamily": "Atkinson Hyperlegible, Menlo, monospace",
+    "terminal.integrated.fontFamily": "monospace",
+    "git.replaceTagsWhenPull": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "atlascode.jira.lastCreateSiteAndProject": {
+        "siteId": "1d335e53-4745-44ff-ac85-bf151d3bd741",
+        "projectKey": "FLOWS"
+    },
+    "workbench.colorTheme": "Quiet Light",
+    "git.autofetch": true,
+    "editor.minimap.enabled": false,
+    "python.testing.pytestEnabled": true,
+    "workbench.settings.applyToAllProfiles": [
+        "python.testing.pytestEnabled",
+        "files.exclude",
+        "vim.easymotion"
+    ],
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": true
+    },
+    "workbench.editor.enablePreview": false,
+    "diffEditor.renderSideBySide": false,
+    "files.exclude": {
+        "": true,
+        "**/__pycache__": true,
+        "**/.git": false,
+        "**/.idea": true,
+        "**/.venv": true,
+        "**/.vscode": true,
+        "**/*_cache": true,
+        "**/logs": true
+    },
+    "vim.useSystemClipboard": true,
+    "vim.statusBarColors.visualblock": "",
+    "vim.easymotion": true,
+    "vim.insertModeKeyBindings": [
+    {
+        "before": ["<Tab>"],
+        "commands": []
+    }],
+    "vim.normalModeKeyBindings": [
+    {
+        "before": ["<Tab>"],
+         "commands": []
+    }
+],
+"explorer.confirmDelete": false,
+"explorer.confirmDragAndDrop": false,
+"roo-cline.allowedCommands": [
+    "npm test",
+    "npm install",
+    "tsc",
+    "git log",
+    "git diff",
+    "git show"
+],
+"debug.toolBarLocation": "docked",
+"python.defaultInterpreterPath": "/opt/homebrew/bin/python3.12",
+"[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+},
+"[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+}
+}

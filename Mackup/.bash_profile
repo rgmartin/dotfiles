@@ -4,3 +4,5 @@ fi
 
 source /Users/rubertmartinpardo/.config/broot/launcher/bash/br
 . "$HOME/.cargo/env"
+export PATH="/usr/local/opt/unixodbc/bin:$PATH"
+export PATH="/usr/local/opt/unixodbc/bin:$PATH"

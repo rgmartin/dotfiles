@@ -1,3 +1,6 @@
+[init]
+templatedir = ~/.git_template
+
 [user]
 	name = rubert.martin
 	email = rubert.pardo@symphonyai.com
@@ -17,3 +20,5 @@
 
 [diff]
   colorMoved = default
+[alias]
+	cof = "\\!f() { branch=$(git branch -a | grep -v HEAD | sed \"s/remotes\\/origin\\///\" | sed \"s/^\\* //\" | sed \"s/^  //\" | sort -u | grep -i \"$1\" | fzf --prompt=\"Select branch: \" --height=10); [ -n \"$branch\" ] && git checkout \"$branch\"; }; f"

@@ -1,0 +1,19 @@
+# Sensitive Azure tokens and credentials
+Mackup/.azure/msal_token_cache.json
+Mackup/.azure/msal_http_cache.bin
+Mackup/.azure/az.sess
+Mackup/.azure/azureProfile.json
+Mackup/.azure/commands/
+
+# Kubernetes credentials
+Mackup/.kube/config
+
+# SSH keys and config
+Mackup/.ssh/
+
+# DBeaver credentials
+Mackup/Library/DBeaverData/workspace6/General/.dbeaver/credentials-config.json
+Mackup/Library/DBeaverData/workspace6/General/.dbeaver/.credentials-config.json.bak
+
+# macOS
+.DS_Store
